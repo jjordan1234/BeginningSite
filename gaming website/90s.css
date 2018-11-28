@@ -1,0 +1,47 @@
+/* Stylesheet */
+
+body
+{
+font-family:arial, verdana, helvetica;
+color:white;
+font-size:14px;
+font-weight:bold;
+background-color:white;
+background-image:url('90sbg.PNG');
+}
+h1{
+color: white;
+}
+h2{
+color: white;
+}
+h3{
+color: white;
+}
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+a:link {
+color: red;
+ 
+}
+a:visited {
+color:purple;
+}
+a:hover {
+color:white;
+}

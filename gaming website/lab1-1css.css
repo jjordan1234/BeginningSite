@@ -1,0 +1,21 @@
+/* Stylesheet */
+
+header
+{
+border-style: solid ;
+border-color: green;
+border-style: bold;
+font-size:30px;
+}
+body
+{
+font-family:arial, verdana, helvetica;
+color:white;
+font-size:14px;
+background-color:white;
+background-image:url('matrix.PNG');
+}
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}

@@ -1,0 +1,42 @@
+/* Stylesheet */
+
+header
+{
+border-style: solid;
+border-color: brown;
+border-style: bold;
+}
+body
+{
+font-family:arial, verdana, helvetica;
+color:orange;
+font-size:14px;
+background-color:white;
+background-image:url('capture6.PNG');
+}
+h1{
+color: white;
+}
+h2{
+color: white;
+}
+h3{
+color: white;
+}
+canvas { background: #eee;position: absolute;left: 950px;top: 250px;
+border-style: inset;
+border-color: yellow;
+border-style: bold; }
+
+
+a:link {
+color: #cc0000;
+ 
+}
+a:visited {
+color: #999999;
+}
+a:hover {
+color: #ff3300;
+}
+

@@ -1,0 +1,56 @@
+/* Stylesheet */
+
+header
+{
+font-family:arial, verdana, helvetica;
+color:black;
+font-size:30px;
+font-weight:bold;
+}
+
+body
+{
+font-family: 'Futura' ;
+color:#fff;
+font-size:14px;
+font-weight:bold;
+text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 
+0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+background-image:url('vidya.PNG');
+}
+h1{
+color: white;
+}
+h2{
+color: white;
+}
+h3{
+color: white;
+}
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+a:link {
+color: red;
+ 
+}
+a:visited {
+color:purple;
+}
+a:hover {
+color:white;
+}

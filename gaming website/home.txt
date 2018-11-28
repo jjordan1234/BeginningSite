@@ -1,0 +1,64 @@
+<html>
+
+<head>
+ <link rel="stylesheet" type="text/css" href="home.css">
+<meta name="keywords" content="Video Games, Game History, Old school gaming"/>
+<meta name="description" content="The History of Gaming"/>
+<meta charset="UTF-8"/>
+<title>The history of Gaming</title>
+</head>
+<body>
+<header>
+<img src="game3.png" alt="The history of gaming banner" />
+ </header>
+<section>
+<article>
+<h1>Why we play</h1>
+<p>The idea that video games are for childrens is now an antiquated notion as more and more of each generation are playing video games. The video game industry has never been bigger or</br>
+ more popular than it is today. The average age of gamers today is 35 years old. We have witnessed video gaming grow from infancy during the PONG years, to what it is today with such games </br>
+as Fallout and Destiny. The great thing is, that video gaming has not finished evolving. One might wonder what else could be left with gaming? Well, with the beginning of virtual gaming </br>
+starting to become more and more popular, there very well maybe another step in the evolution of gaming. Virtual reality gaming is where a person can experience being in a three-dimensional </br>
+environment and interact with that environment during a game. This is an essential part of the game.A headset is the main tool for this technology. While there are millions of personal headset </br>
+owners out there-Sony's PlayStation VR headset alone sold more than 1 million units as of June 2017. VR is not yet widespread.</p>
+</article>
+<img src = "yoshi.gif" align = right>
+<article>
+<h2>In the beginning....</h2>
+<p>A lot of people, when asked what their idea of what the first game created for commercialuse was, you would imagine them describing</br>
+the game PONG, a table tennis game released by Atari in the early 70s. The first comercial video game to be created however was not PONG</br>
+ but ratheran asteroid shooter game called Computer Space. This game was created by Nolan Bushnell and Ted Dabne, who later founded Atari. </br>
+ The premise of the game was easy, you had to control a space ship and would fire missiles at flying saucers. Although Atari’s iconic table</br>
+ tennis simulator was not the first video game ever made,it was the first video game that was a massive commercial success. Moreover, it </br>
+basically launched the video game industry as we know it today.At the height of its success, there were approximately 35,000 Pong arcade machines</br>
+ across the United States</p>
+</article>
+</section>
+<img src = "mario.gif"  width="212" height="221" align = left>
+<aside>
+<h3>Did you know</h3>
+<ol> 
+<li>Mario was actually named after the landlord of Nintendo’s first warehouse Mr. Mario Segale.</li> 
+<li>Two-thirds of American households play games 60 percent are male, 40 are female percent.</li>
+<li>In 1990 game, Golden Axe from SEGA was voiced entirely by prisoners on death row. </li>
+<li>The best-selling consoles of all time are the PlayStation 2 and Nintendo DS both tied with an about 155 million units sold. Video Game Facts Nintendo-DS</li>
+</ol>
+<h4>Other gaming history sites</h4>
+<a href=<a href=https://en.wikipedia.org/wiki/History_of_video_games>
+History of Video games Wiki
+<a/>
+</br>
+<a href=<a href=https://www.history.com/topics/history-of-video-games>
+The history of gaming on the history channel
+<a/>
+
+</aside>
+<footer>
+<a href="70s.html">Gaming in the 70s </a> |
+<a href="80s.html">Gaming in the 80s </a> |
+<a href="90s.html">Gaming in the 90s </a> |
+<a href="2000.html">Gaming 2000 to present </a> |
+<a href="questionaire.html">join the site! </a> |
+</footer>
+
+</body>
+</html>

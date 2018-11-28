@@ -1,0 +1,251 @@
+<html>
+
+<head>
+ <link rel="stylesheet" type="text/css" href="70s.css">
+<meta name="keywords" content="Video Games, Game History, Old school gaming"/>
+<meta name="description" content="The History of Gaming"/>
+<meta charset="UTF-8"/>
+<title>The history of Gaming pg.2</title>
+</head>
+<body>
+<header>
+<img src="game4.png" alt="The history of gaming 70s" />
+ </header>
+
+<canvas id="myCanvas" width="420" height="260">
+<h1> Break Block was very popular in the 70s </h1>
+</canvas>
+
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+var ballRadius = 10;
+var x = canvas.width/2;
+var y = canvas.height-30;
+var dx = 2;
+var dy = -2;
+var paddleHeight = 10;
+var paddleWidth = 75;
+var paddleX = (canvas.width-paddleWidth)/2;
+var rightPressed = false;
+var leftPressed = false;
+var brickRowCount = 5;
+var brickColumnCount = 3;
+var brickWidth = 75;
+var brickHeight = 20;
+var brickPadding = 10;
+var brickOffsetTop = 30;
+var brickOffsetLeft = 30;
+var score = 0;
+var lives = 3;
+
+var bricks = [];
+for(c=0; c<brickColumnCount; c++) {
+    bricks[c] = [];
+    for(r=0; r<brickRowCount; r++) {
+        bricks[c][r] = { x: 0, y: 0, status: 1 };
+    }
+}
+
+document.addEventListener("keydown", keyDownHandler, false);
+document.addEventListener("keyup", keyUpHandler, false);
+document.addEventListener("mousemove", mouseMoveHandler, false);
+
+function keyDownHandler(e) {
+    if(e.keyCode == 39) {
+        rightPressed = true;
+    }
+    else if(e.keyCode == 37) {
+        leftPressed = true;
+    }
+}
+function keyUpHandler(e) {
+    if(e.keyCode == 39) {
+        rightPressed = false;
+    }
+    else if(e.keyCode == 37) {
+        leftPressed = false;
+    }
+}
+function mouseMoveHandler(e) {
+    var relativeX = e.clientX - canvas.offsetLeft;
+    if(relativeX > 0 && relativeX < canvas.width) {
+        paddleX = relativeX - paddleWidth/2;
+    }
+}
+function collisionDetection() {
+    for(c=0; c<brickColumnCount; c++) {
+        for(r=0; r<brickRowCount; r++) {
+            var b = bricks[c][r];
+            if(b.status == 1) {
+                if(x > b.x && x < b.x+brickWidth && y > b.y && y < b.y+brickHeight) {
+                    dy = -dy;
+                    b.status = 0;
+                    score++;
+                    if(score == brickRowCount*brickColumnCount) {
+                        alert("YOU WIN, CONGRATS!");
+                        document.location.reload();
+                    }
+                }
+            }
+        }
+    }
+}
+
+function drawBall() {
+    ctx.beginPath();
+    ctx.arc(x, y, ballRadius, 0, Math.PI*2);
+    ctx.fillStyle = "#0095DD";
+    ctx.fill();
+    ctx.closePath();
+}
+function drawPaddle() {
+    ctx.beginPath();
+    ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
+    ctx.fillStyle = "#0095DD";
+    ctx.fill();
+    ctx.closePath();
+}
+function drawBricks() {
+    for(c=0; c<brickColumnCount; c++) {
+        for(r=0; r<brickRowCount; r++) {
+            if(bricks[c][r].status == 1) {
+                var brickX = (r*(brickWidth+brickPadding))+brickOffsetLeft;
+                var brickY = (c*(brickHeight+brickPadding))+brickOffsetTop;
+                bricks[c][r].x = brickX;
+                bricks[c][r].y = brickY;
+                ctx.beginPath();
+                ctx.rect(brickX, brickY, brickWidth, brickHeight);
+                ctx.fillStyle = "#0095DD";
+                ctx.fill();
+                ctx.closePath();
+            }
+        }
+    }
+}
+function drawScore() {
+    ctx.font = "16px Arial";
+    ctx.fillStyle = "#0095DD";
+    ctx.fillText("Score: "+score, 8, 20);
+}
+function drawLives() {
+    ctx.font = "16px Arial";
+    ctx.fillStyle = "#0095DD";
+    ctx.fillText("Lives: "+lives, canvas.width-65, 20);
+}
+
+function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawBricks();
+    drawBall();
+    drawPaddle();
+    drawScore();
+    drawLives();
+    collisionDetection();
+    
+    if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
+        dx = -dx;
+    }
+    if(y + dy < ballRadius) {
+        dy = -dy;
+    }
+    else if(y + dy > canvas.height-ballRadius) {
+        if(x > paddleX && x < paddleX + paddleWidth) {
+            dy = -dy;
+        }
+        else {
+            lives--;
+            if(!lives) {
+                alert("GAME OVER");
+                document.location.reload();
+            }
+            else {
+                x = canvas.width/2;
+                y = canvas.height-30;
+                dx = 3;
+                dy = -3;
+                paddleX = (canvas.width-paddleWidth)/2;
+            }
+        }
+    }
+    
+    if(rightPressed && paddleX < canvas.width-paddleWidth) {
+        paddleX += 7;
+    }
+    else if(leftPressed && paddleX > 0) {
+        paddleX -= 7;
+    }
+    
+    x += dx;
+    y += dy;
+    requestAnimationFrame(draw);
+}
+
+draw();
+
+</script>
+<section>
+<article>
+<h1>Origins</h1>
+<p>In the 1970s, videogames were slowly making their way out of university</br>
+ labs and into the hands of consumers. The first games were created on </br>
+room-sized mainframe computers with price tags in the hundreds of thousands</br>
+ of dollars, but over the course of ten years that began to shrink. It didn't </br>
+take long for the scale to reach a point where gamers could get their fix on</br> 
+systems the size of a bread box for 200 bucks. The home videogame market had </br>
+begun.</p>
+
+
+<h2>The golden age of gaming</h2>
+<p>The era of the golden age of arcade video games saw some great technological innovations and popularity of arcade video games.The arcade </br>
+ video game demand gained momentum with the release of Space Invaders in 1978 followed by the release of Asteroids and Galaxian in 1979. </br>
+What further added to the widespread demand for arcade video games in the 1980s was the release of Pac-Man, Missile Command, Berzerk,</br>
+Defender and others. It is said that the music industry at this time was hugely affected by the rise in demand for arcade video games.The two most</br>
+successful arcade gaming companies of the era were Namco and Atari. The other popular companies were Sega, Nintendo, Capcom, Konami, Taito,</br>
+Williams, Bally / Midway Manufacturing Company, Cinematronics and SNK. The other well-known games that were released in the 70s</br>
+ were Gran Trak 10 in 1974, Ataris QWAK in 1974, Night Driver in 1976, Football in 1978 to name few.</br>
+</br>
+
+The 70s also saw the development of Pac-Man. In April 1979, Pac-Man then known as Puck-Man being developed was completed over a period</br>
+ of 18 months was originally launched in Japan by Namco in 1980. The game received a lukewarm response, but after a year the game was</br>
+ re-released under a different name of Pac-Man by Bally / Midway and the rest is a history.
+</p>
+</article>
+<h3>Top selling games of the 70s</h3>
+<ol> 
+<li>Space Invaders</li> 
+<li>Pong</li>
+<li>Galaxian</li>
+<li>Asteroids Breakout</li>
+<li>Tank</li>
+<li>Computer Space</li>
+<li>Anti-Aircraft</li>
+<li>Death Race</li>
+<li>Lunar Lander</li>
+<li>Star Radiers</li>
+</ol>
+<img src = "Atari.PNG"  width="212" height="221" align = left>
+</br>
+</br>
+</br>
+<h4>Other gaming history sites</h4>
+<a href=<a href=https://en.wikipedia.org/wiki/History_of_video_games>
+History of Video games Wiki
+<a/>
+</br>
+<a href=<a href=https://www.history.com/topics/history-of-video-games>
+The history of gaming on the history channel
+<a/>
+
+</aside>
+<footer>
+<a href="80s.html">Gaming in the 80s </a> |
+<a href="90s.html">Gaming in the 90s </a> |
+<a href="2000.html">Gaming 2000 to present </a> |
+<a href="questionaire.html">Join the site! </a> |
+<a href="home.html">home </a> 
+</footer>
+
+</body>
+</html>

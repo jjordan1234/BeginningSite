@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="questionaire.css">
+<meta name="keywords" content="old school,gaming, gaming history"/>
+
+<meta name="author" content="Jason Jordan"/>
+
+<meta name="description" content="The history of gaming"/>
+
+<meta charset="UTF-8">
+
+<title>Lets hear about you</title>
+<head/>
+<body>
+<div class="topnav">
+  <a class="active" href="home.html">Home</a>
+  <a href="70s.html">Gaming in the 70s</a>
+  <a href="80s.html">Gaming in the 80s</a>
+  <a href="90s.html">Gaming in the 90s</a>
+  <a href="2000.html">Gaming in the 2000s</a>
+  
+  
+</div>
+
+<header>
+ <h1><center>Lets hear about you</center></h1>
+</header>    
+
+<br/>
+
+Enter Your Name: <input type="text" name="Name" required size="40"/><br/>
+
+<br/>
+
+Enter Your E-mail: <input type="text" name="Email"required size="40"/><br/>
+
+<br/>
+Would you like to receive updates? <br/>
+<input type="radio" name="AddToList" value="yes"/> Yes
+<input type="radio" name="AddToList" value="no"/>No<br/>
+<br/>
+How long have you been a gamer?<br/>
+<select name="Frequency">
+<option>1 year</option>
+<option>less than 5 years</option>
+<option>more than 5 years</option>
+<option value="I'm not a fan,I just like your website" >Im not, I just like your site</option>
+</select>
+
+<br/>
+<br/>
+
+Enter Your Password: <input type="password" name="Password" required placeholder="Enter a hard password"size="14"/>
+<br/>
+<br/>
+<br/>
+
+<textarea rows="3" cols="20">
+Improvements to site?
+</textarea>
+
+<br/>
+<br/>
+<br/>
+
+
+Submit a picture for your profile: <input type="file" name="UploadedFile"/>
+<br/>
+<br/>
+<br/>
+<input type="submit"/> 
+<input type="reset"/>
+<br/>
+<br/>
+
+
+</body>
+<html>

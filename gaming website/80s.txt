@@ -1,0 +1,92 @@
+<html>
+
+<head>
+ <link rel="stylesheet" type="text/css" href="80s.css">
+<meta name="keywords" content="Video Games, Game History, Old school gaming"/>
+<meta name="description" content="Gaming in the 80s"/>
+<meta charset="UTF-8"/>
+<title>Gaming in the 80s</title>
+</head>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+<body onload="startTime()">
+<div id="txt"></div>
+<header>
+<img src="80s.png" alt="Gaming in the 80s" />
+ </header>
+<main>
+<section>
+<article>
+<h1>The rise of the Arcade</h1>
+<p>Through most of the eighties and even the early nineties, the scene was always the same.</br>
+ Somewhere in your local mall, a noisy little store would sit in some corner. In it, groups of </br>
+people would crowd around strange looking cabinets, trying to catch a glimpse of the action. the local</br>
+arcade was more than just a place to hang out. It was a place to gather with other people who shared your</br>
+passion for for gaming, whether they be friends or just people who happened to ask if they could join your</br>
+game. There was something about the local arcade that just felt right. Sure, they were not always the cleanest</br>
+places, and some were definitely not what you would call safe, but to gamers growing up in that time period, the </br>
+arcades will always hold a place in their hearts.</p>
+<article>
+<h2>The rise of the NES, Sega, and the beginning of the console wars</h2>
+<p>
+Nintendo's 8-bit video game console, the Nintendo Entertainment System (NES), known in Japan as the Family Computer</br>
+ or Famicom, was introduced after the video game crash of 1983, and was instrumental in revitalizing the industry. It </br>
+ enjoyed a long lifespan and dominated the market during the rest of the decade. In the late 80s, Nintendo's dominance was</br>
+ threatened by newer, technologically superior consoles. 1987, NEC and Hudson Soft released the PC Engine, and a year </br>
+later, Sega released the 16 bit Mega Drive. Both were introduced in North America in 1989, where they were respectively marketed</br>
+ as the "TurboGrafx-16" and the "Genesis." The Sega Master System was the first of Sega's consoles to see widespread distribution</br> 
+outside of Japan, and went head-to-head with the Nintendo Entertainment System (the international version of the Famicom) across the</br>
+ world. Sega was unsuccessful at dethroning Nintendo in the key markets of Japan and North America.  </p>
+</article>
+</section>
+</main>
+
+<aside>
+<h3>More fun facts</h3>
+<ol> 
+<li>Mario is voiced by Charles Martinet, who crashed an audition in the early '90s and gave the Italian plumber his signature sound in Super Mario 64.</li> 
+<li>Data-wise, even the largest NES games were no bigger than 6 Megabits, or about 768 Kilobytes.</li>
+<li>The Nintendo Game Boy was the first video game console to be played in space.  </li>
+<li>Donkey Kong, Mario, and Princess Peach are based on characters from the cartoon series Popeye. Nintendo created them after they failed to obtain a</br>
+ license to make a Popeye video game.</li>
+</ol>
+</aside>
+
+<h4>Other gaming history sites</h4>
+<nav>
+<a href=<a href=https://en.wikipedia.org/wiki/History_of_video_games>
+History of Video games Wiki
+<a/>
+</br>
+<a href=<a href=https://www.history.com/topics/history-of-video-games>
+The history of gaming on the history channel
+<a/>
+
+
+<footer>
+<a href="70s.html">Gaming in the 70s </a> |
+<a href="80s.html">Gaming in the 80s </a> |
+<a href="90s.html">Gaming in the 90s </a> |
+<a href="2000.html">Gaming 2000 to present </a> |
+<a href="home.html">home </a> |
+<a href="questionaire.html">Join the site!</a> |
+</footer>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="2000.css">
+<meta name="keywords" content="old school,gaming, gaming history"/>
+
+<meta name="author" content="Jason Jordan"/>
+
+<meta name="description" content="The history of gaming"/>
+
+<meta charset="UTF-8">
+
+<title>2000 and beyond</title>
+</head>
+
+<div class="topnav">
+  <a class="active" href="home.html">Home</a>
+  <a href="70s.html">Gaming in the 70s</a>
+  <a href="80s.html">Gaming in the 80s</a>
+  <a href="90s.html">Gaming in the 90s</a>
+  <a href="questionaire.html">Become a member!</a>
+  </div>
+<header>
+ <center>2000 and beyond....</center> 
+</header>
+<body>
+<img src="xbox.png" ALIGN="Right">
+<h1>We have a new contender!!!</h1>
+<p>
+Xbox is a video gaming brand created and owned by Microsoft. It represents</br>
+a series of video game consoles developed by Microsoft, with three consoles</br> 
+released in the sixth, seventh and eighth generations respectively. The</br> 
+brand also represents applications,streaming services, and an</br> 
+online service by the name of Xbox Live. The brand was first introduced in</br> 
+the United States in November 2001, with the launch of the original Xbox console.</br>
+That original device was the first video game console offered by an American</br> 
+company after the Atari Jaguar stopped sales in 1996. It reached over 24 million</br> 
+units sold as of May 2006. Microsoft's second console, the Xbox 360, was released</br> 
+in 2005 and has sold over 77.2 million consoles worldwide as of April 2013. The</br> 
+successor to the Xbox 360 and Microsoft's most recent console, the Xbox One, was</br> 
+revealed in May 2013.The Xbox One has been released in 21 markets in total, with</br> 
+a Chinese release in September 2014. The head of Xbox is Phil Spencer, who succeeded</br> 
+former head Marc Whitten in late March 2014. 
+</p> 
+</br>
+<h2> That's Wii diculous</h2>
+<p>
+The Wii is a home video game console released by Nintendo on November 19, 2006. As a seventh</br> 
+generation console, the Wii competed with Microsoft's Xbox 360 and Sony's PlayStation 3. Nintendo</br>
+states that its console targets a broader demographic than that of the two others.As of the first</br>
+quarter of 2012, the Wii leads its generation over PlayStation 3 and Xbox 360 in worldwide sales,</br>
+with more than 101 million units sold; in December 2009, the console broke the sales record for a</br>
+single month in the United States.The Wii introduced the Wii Remote controller, which can be used </br>
+as a handheld pointing device and which detects movement in three dimensions. Another feature of</br> 
+the console is the now defunct WiiConnect24, which enabled it to receive messages and updates over </br>
+the Internet while in standby mode.Like other seventh-generation consoles, it features a game </br>
+download service, called Virtual Console, which features emulated games from past systems.
+</p>
+
+
+
+
+
+
+
+</body>
+<html>
